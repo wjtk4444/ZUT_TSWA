@@ -183,6 +183,7 @@
             this.radioButtonHex.TabStop = true;
             this.radioButtonHex.Text = "Hex";
             this.radioButtonHex.UseVisualStyleBackColor = true;
+            this.radioButtonHex.CheckedChanged += new System.EventHandler(this.radioButtonHex_CheckedChanged);
             // 
             // radioButtonDec
             // 
@@ -194,6 +195,7 @@
             this.radioButtonDec.TabStop = true;
             this.radioButtonDec.Text = "Dec";
             this.radioButtonDec.UseVisualStyleBackColor = true;
+            this.radioButtonDec.CheckedChanged += new System.EventHandler(this.radioButtonDec_CheckedChanged);
             // 
             // radioButtonOct
             // 
@@ -205,6 +207,7 @@
             this.radioButtonOct.TabStop = true;
             this.radioButtonOct.Text = "Oct";
             this.radioButtonOct.UseVisualStyleBackColor = true;
+            this.radioButtonOct.CheckedChanged += new System.EventHandler(this.radioButtonOct_CheckedChanged);
             // 
             // radioButtonBin
             // 
@@ -216,6 +219,7 @@
             this.radioButtonBin.TabStop = true;
             this.radioButtonBin.Text = "Bin";
             this.radioButtonBin.UseVisualStyleBackColor = true;
+            this.radioButtonBin.CheckedChanged += new System.EventHandler(this.radioButtonBin_CheckedChanged);
             // 
             // radioButtonByte
             // 

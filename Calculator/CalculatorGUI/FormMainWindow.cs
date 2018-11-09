@@ -1,20 +1,21 @@
-﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-using System.Windows.Forms;
+﻿using System.Windows.Forms;
+using CalculatorLogic;
 
 namespace CalculatorGUI
 {
     public partial class FormMainWindow : Form
     {
+        private Calculator calculator;
+
         public FormMainWindow()
         {
             InitializeComponent();
+
+            calculator = new Calculator();
+
+            // defaults
+            textBoxResult.Text = calculator.displayValue;
+            updateInputMethodAndLengthGUI();
         }
     }
 }
