@@ -15,7 +15,8 @@ namespace CalculatorGUI
 
             // defaults
             textBoxResult.Text = calculator.displayValue;
-            updateInputMethodAndLengthGUI();
+            radioButtonDec.Checked = calculator.inputMode == InputMode.DEC; // always true; rises radioButtonDec.CheckChanged event (which calls updateKeyboardLayout())
+            radioButtonQWord.Checked = calculator.inputLength == InputLength.QWORD; // always true; rises radioButtonQWord.CheckChanged event (which calls updateBitDisplay())
         }
     }
 }
